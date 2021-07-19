@@ -23,14 +23,15 @@ class QuantitySet(xr.Dataset):
 
     def __init__(self, data_vars: Dict[str, Any] = None, *args, **kwargs):
         super().__init__(data_vars, *args, **kwargs)
-        for k, v in data_vars.items():
-            try:
-                if not isinstance(v.unit, u.UnitBase):
-                    raise TypeError
-                unit = {k: v.unit}
-                self._unit.update(unit)
-            except (AttributeError, TypeError):
-                pass
+        if isinstance(data_vars, dict):
+            for k, v in data_vars.items():
+                try:
+                    if not isinstance(v.unit, u.UnitBase):
+                        raise TypeError
+                    unit = {k: v.unit}
+                    self._unit.update(unit)
+                except (AttributeError, TypeError):
+                    pass
 
     @property
     def unit(self) -> Dict[str, u.Unit]:
