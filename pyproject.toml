@@ -1,16 +1,17 @@
 [tool.poetry]
-name = "PACKAGENAME"
+name = "xarray-quantity"
 version = "0.1.0"
-description = "TEMPLATE"
+description = "xarray extension which supports astropy quantities."
 license = "MIT"
 readme = "README.md"
 authors = ["KaoruNishikawa <k.nishikawa@a.phys.nagoya-u.ac.jp>"]
-homepage = "https://github.com/USERNAME/PACKAGENAME"
-repository = "https://github.com/USERNAME/PACKAGENAME"
+homepage = "https://github.com/KaoruNishikawa/xarray-quantity"
+repository = "https://github.com/KaoruNishikawa/xarray-quantity"
 
 [tool.poetry.dependencies]
-python = "^3.6"
-numpy = "^1.19"
+python = "^3.7"
+astropy = "^4.2.1"
+xarray = "^0.18.2"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
