@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: [3.6, 3.7, 3.8, 3.9]
+        python-version: [3.7, 3.8, 3.9]
     steps:
       - uses: actions/checkout@v2
       - name: Setup Python ${{ matrix.python-version }}
@@ -24,9 +24,9 @@ jobs:
           pip3 install poetry
           poetry install
       - name: Lint by Flake8 
-        run: poetry run flake8 tests script
+        run: poetry run flake8 tests xarray_quantity
       - name: Format by Black
-        run: poetry run black --check tests script
+        run: poetry run black --check tests xarray_quantity
       - name: Test by pytest
-        run: poetry run pytest -v tests script
+        run: poetry run pytest -v tests xarray_quantity
 
