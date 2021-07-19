@@ -1,8 +1,8 @@
 # xarray-quantity
 
-[![PyPI](https://img.shields.io/pypi/v/PACKAGENAME.svg?label=PyPI&style=flat-square)](https://pypi.org/pypi/xarray-quantity/)
-[![Python](https://img.shields.io/pypi/pyversions/PACKAGENAME.svg?label=Python&color=yellow&style=flat-square)](https://pypi.org/pypi/xarray-quantity/)
-[![Test](https://img.shields.io/github/workflow/status/USERNAME/PACKAGENAME/Test?logo=github&label=Test&style=flat-square)](https://github.com/KaoruNishikawa/xarray-quantity/actions)
+[![PyPI](https://img.shields.io/pypi/v/xarray-quantity.svg?label=PyPI&style=flat-square)](https://pypi.org/pypi/xarray-quantity/)
+[![Python](https://img.shields.io/pypi/pyversions/xarray-quantity.svg?label=Python&color=yellow&style=flat-square)](https://pypi.org/pypi/xarray-quantity/)
+[![Test](https://img.shields.io/github/workflow/status/KaoruNishikawa/xarray-quantity/Test?logo=github&label=Test&style=flat-square)](https://github.com/KaoruNishikawa/xarray-quantity/actions)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg?label=License&style=flat-square)](LICENSE)
 
 xarray extension which supports astropy quantities.
