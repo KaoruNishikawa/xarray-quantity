@@ -1,4 +1,4 @@
-# python-template
+# xarray-quantity
 
 [![PyPI](https://img.shields.io/pypi/v/PACKAGENAME.svg?label=PyPI&style=flat-square)](https://pypi.org/pypi/xarray-quantity/)
 [![Python](https://img.shields.io/pypi/pyversions/PACKAGENAME.svg?label=Python&color=yellow&style=flat-square)](https://pypi.org/pypi/xarray-quantity/)
