@@ -25,7 +25,7 @@ class QuantitySet(xr.Dataset):
         super().__init__(data_vars, *args, **kwargs)
         for k, v in data_vars.items():
             try:
-                if not isinstance(v.unit, u.Unit):
+                if not isinstance(v.unit, u.UnitBase):
                     raise TypeError
                 unit = {k: v.unit}
                 self._unit.update(unit)
