@@ -2,4 +2,7 @@
 
 import pkg_resources
 
-__version__ = pkg_resources.get_distribution("xarray_quantity").version
+try:
+    __version__ = pkg_resources.get_distribution("xarray_quantity").version
+except pkg_resources.DistributionNotFound:
+    __version__ = "0.1.0"
