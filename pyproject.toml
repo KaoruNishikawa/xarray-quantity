@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "xarray-quantity"
-version = "0.1.2"
+version = "0.1.3"
 description = "xarray extension which supports astropy quantities."
 license = "MIT"
 readme = "README.md"

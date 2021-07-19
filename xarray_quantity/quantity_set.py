@@ -1,4 +1,4 @@
-from typing import Union, Hashable, Dict
+from typing import Union, Hashable, Dict, Any
 
 import xarray as xr
 import astropy.units as u
@@ -21,7 +21,7 @@ class QuantitySet(xr.Dataset):
 
     _unit = {}
 
-    def __init__(self, data_vars, *args, **kwargs):
+    def __init__(self, data_vars: Dict[str, Any] = None, *args, **kwargs):
         super().__init__(data_vars, *args, **kwargs)
         for k, v in data_vars.items():
             try:
