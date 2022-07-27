@@ -9,9 +9,9 @@ homepage = "https://github.com/KaoruNishikawa/xarray-quantity"
 repository = "https://github.com/KaoruNishikawa/xarray-quantity"
 
 [tool.poetry.dependencies]
-python = "^3.7"
-astropy = "^4.2.1"
-xarray = "^0.18.2"
+python = "^3.8"
+astropy = ">5.0.3"
+xarray = ">2022"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
