@@ -15,7 +15,7 @@ xarray = ">2022"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.5"
-black = "^22.4"
+black = "^24.3"
 flake8 = "^3.8"
 sphinx = "^3.3"
 pydata-sphinx-theme = "^0.4"
